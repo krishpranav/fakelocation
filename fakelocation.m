@@ -11,3 +11,9 @@
 %hook CLLocation
 
 CLLocationCoordinate2D location;
+
+-(CLLocationCoordinate2D)coordinate {
+
+    NSString *path = [@"/var/mobile/Library/Preferences" stringByAppendingPathComponent:[@"fun.tweaks.locationfaker" stringByAppendingPathExtension:@"plist"]];
+    NSDictionary *conf = [[NSDictionary alloc] initWithContentsOfFile:path];
+}
