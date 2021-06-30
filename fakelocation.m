@@ -6,3 +6,8 @@
 #else
 #define DebugLog(...)
 #endif
+
+
+%hook CLLocation
+
+CLLocationCoordinate2D location;
